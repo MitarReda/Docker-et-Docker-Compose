@@ -73,4 +73,16 @@ services:
       - CONFIG_SERVICE_URL=http://enset-ebank-config-service:9999
     depends_on:
       enset-ebank-config-service:
+<<<<<<< HEAD
         condition: service_healthy
+=======
+        condition: service_healthy
+
+  front-end-angular:
+    build : ./angular-front-end
+    container_name: front-end-angular
+    ports:
+      - '80:80'
+    expose:
+      - '80'
+>>>>>>> e29e2cf (front End)
